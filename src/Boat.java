@@ -1,28 +1,23 @@
 public class Boat extends Vehicle{
 
-    String competitiveSport,propulsionTechnology,movementMode,relativeSpeed;
+    String recreationActivity,propulsionTechnology,movementMode,relativeSpeed;
 
-    public Boat(String type, String competitiveSport, String propulsionTechnology, String movementMode, String relativeSpeed) {
+    public Boat(String type, String recreationActivity, String propulsionTechnology, String movementMode, String relativeSpeed) {
         super(type);
-        this.competitiveSport = competitiveSport;
+        this.recreationActivity = recreationActivity;
         this.propulsionTechnology = propulsionTechnology;
         this.movementMode = movementMode;
         this.relativeSpeed = relativeSpeed;
     }
 
-    public Boat(String type, String competitiveSport, String propulsionTechnology, String movementMode) {
-        super(type);
-        this.competitiveSport = competitiveSport;
-        this.propulsionTechnology = propulsionTechnology;
-        this.movementMode = movementMode;
+
+
+    public String getRecreationActivity() {
+        return recreationActivity;
     }
 
-    public String getCompetitiveSport() {
-        return competitiveSport;
-    }
-
-    public void setCompetitiveSport(String competitiveSport) {
-        this.competitiveSport = competitiveSport;
+    public void setRecreationActivity(String recreationActivity) {
+        this.recreationActivity = recreationActivity;
     }
 
     public String getPropulsionTechnology() {
@@ -53,7 +48,7 @@ public class Boat extends Vehicle{
     public void vehicleCharacteristics() {
         super.vehicleCharacteristics();
 
-        System.out.println("Competitive Sport: "+competitiveSport+" Propulsion Technology: "+propulsionTechnology+" Mode of Movement: "+movementMode+" Relative Speed: "+relativeSpeed);
+        System.out.println("Reacreation Activity Carried out: "+recreationActivity+" Propulsion Technology: "+propulsionTechnology+" Mode of Movement: "+movementMode+" Relative Speed: "+relativeSpeed);
 
     }
 }

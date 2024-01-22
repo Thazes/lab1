@@ -1,13 +1,13 @@
 public class Bus extends Vehicle{
 
-    String usefullness,numberOfWheels,numberofPassengers;
+    String usefullness,numberOfWheels,numberofPassengers,predictability;
 
-    public Bus(String type,String usefullness,String numberOfWheels,String numberofPassengers) {
+    public Bus(String type, String usefullness, String numberOfWheels, String numberofPassengers, String predictability) {
         super(type);
-
-        this.usefullness=usefullness;
-        this.numberOfWheels=numberOfWheels;
-        this.numberofPassengers=numberofPassengers;
+        this.usefullness = usefullness;
+        this.numberOfWheels = numberOfWheels;
+        this.numberofPassengers = numberofPassengers;
+        this.predictability = predictability;
     }
 
     public String getUsefullness() {
@@ -34,10 +34,18 @@ public class Bus extends Vehicle{
         this.numberofPassengers = numberofPassengers;
     }
 
+    public String getPredictability() {
+        return predictability;
+    }
+
+    public void setPredictability(String predictability) {
+        this.predictability = predictability;
+    }
+
     @Override
     public void vehicleCharacteristics() {
         super.vehicleCharacteristics();
 
-        System.out.println("Uses: "+usefullness+" Number of wheels: "+numberOfWheels+" Number of passengers: "+numberofPassengers);
+        System.out.println("Uses: "+usefullness+" Number of wheels: "+numberOfWheels+" Number of passengers: "+numberofPassengers+" Predictability: "+predictability);
     }
 }
