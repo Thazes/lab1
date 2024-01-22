@@ -1,10 +1,9 @@
 public class Vehicle {
-    String type,numberPassengers,propulsionTechnology;
+    String type;
 
-    public Vehicle(String type, String numberPassengers, String propulsionTechnology) {
+    public Vehicle(String type) {
         this.type = type;
-        this.numberPassengers = numberPassengers;
-        this.propulsionTechnology = propulsionTechnology;
+
     }
 
     public String getType() {
@@ -15,23 +14,8 @@ public class Vehicle {
         this.type = type;
     }
 
-    public String getNumberPassengers() {
-        return numberPassengers;
-    }
-
-    public void setNumberPassengers(String numberPassengers) {
-        this.numberPassengers = numberPassengers;
-    }
-
-    public String getPropulsionTechnology() {
-        return propulsionTechnology;
-    }
-
-    public void setPropulsionTechnology(String propulsionTechnology) {
-        this.propulsionTechnology = propulsionTechnology;
-    }
 
     public void vehicleCharacteristics(){
-        System.out.println("Type: "+type+ " Number of passengers: "+numberPassengers+" Propulsion Technology: "+propulsionTechnology);
+        System.out.println("Type: "+type);
     }
 }

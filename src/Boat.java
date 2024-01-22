@@ -1,12 +1,20 @@
 public class Boat extends Vehicle{
 
-    String competitiveSport,engineCapacity,computerGame;
+    String competitiveSport,propulsionTechnology,movementMode,relativeSpeed;
 
-    public Boat(String type, String numberPassengers, String propulsionTechnology, String competitiveSport, String engineCapacity, String computerGame) {
-        super(type, numberPassengers, propulsionTechnology);
+    public Boat(String type, String competitiveSport, String propulsionTechnology, String movementMode, String relativeSpeed) {
+        super(type);
         this.competitiveSport = competitiveSport;
-        this.engineCapacity = engineCapacity;
-        this.computerGame = computerGame;
+        this.propulsionTechnology = propulsionTechnology;
+        this.movementMode = movementMode;
+        this.relativeSpeed = relativeSpeed;
+    }
+
+    public Boat(String type, String competitiveSport, String propulsionTechnology, String movementMode) {
+        super(type);
+        this.competitiveSport = competitiveSport;
+        this.propulsionTechnology = propulsionTechnology;
+        this.movementMode = movementMode;
     }
 
     public String getCompetitiveSport() {
@@ -17,27 +25,35 @@ public class Boat extends Vehicle{
         this.competitiveSport = competitiveSport;
     }
 
-    public String getEngineCapacity() {
-        return engineCapacity;
+    public String getPropulsionTechnology() {
+        return propulsionTechnology;
     }
 
-    public void setEngineCapacity(String engineCapacity) {
-        this.engineCapacity = engineCapacity;
+    public void setPropulsionTechnology(String propulsionTechnology) {
+        this.propulsionTechnology = propulsionTechnology;
     }
 
-    public String getComputerGame() {
-        return computerGame;
+    public String getMovementMode() {
+        return movementMode;
     }
 
-    public void setComputerGame(String computerGame) {
-        this.computerGame = computerGame;
+    public void setMovementMode(String movementMode) {
+        this.movementMode = movementMode;
+    }
+
+    public String getRelativeSpeed() {
+        return relativeSpeed;
+    }
+
+    public void setRelativeSpeed(String relativeSpeed) {
+        this.relativeSpeed = relativeSpeed;
     }
 
     @Override
     public void vehicleCharacteristics() {
         super.vehicleCharacteristics();
 
-        System.out.println("Competitive Sport: "+competitiveSport+" Engine Capacity: "+engineCapacity+" Computer Game: "+computerGame);
+        System.out.println("Competitive Sport: "+competitiveSport+" Propulsion Technology: "+propulsionTechnology+" Mode of Movement: "+movementMode+" Relative Speed: "+relativeSpeed);
 
     }
 }

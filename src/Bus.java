@@ -1,43 +1,43 @@
 public class Bus extends Vehicle{
 
-    String competitiveSport,engineCapacity,computerGame;
+    String usefullness,numberOfWheels,numberofPassengers;
 
-    public Bus(String type, String numberPassengers, String propulsionTechnology,String competitiveSport,String engineCapacity,String computerGame) {
-        super(type, numberPassengers, propulsionTechnology);
+    public Bus(String type,String usefullness,String numberOfWheels,String numberofPassengers) {
+        super(type);
 
-        this.competitiveSport=competitiveSport;
-        this.engineCapacity=engineCapacity;
-        this.computerGame=computerGame;
+        this.usefullness=usefullness;
+        this.numberOfWheels=numberOfWheels;
+        this.numberofPassengers=numberofPassengers;
     }
 
-    public String getCompetitiveSport() {
-        return competitiveSport;
+    public String getUsefullness() {
+        return usefullness;
     }
 
-    public void setCompetitiveSport(String competitiveSport) {
-        this.competitiveSport = competitiveSport;
+    public void setUsefullness(String usefullness) {
+        this.usefullness = usefullness;
     }
 
-    public String getEngineCapacity() {
-        return engineCapacity;
+    public String getNumberOfWheels() {
+        return numberOfWheels;
     }
 
-    public void setEngineCapacity(String engineCapacity) {
-        this.engineCapacity = engineCapacity;
+    public void setNumberOfWheels(String numberOfWheels) {
+        this.numberOfWheels = numberOfWheels;
     }
 
-    public String getComputerGame() {
-        return computerGame;
+    public String getNumberofPassengers() {
+        return numberofPassengers;
     }
 
-    public void setComputerGame(String computerGame) {
-        this.computerGame = computerGame;
+    public void setNumberofPassengers(String numberofPassengers) {
+        this.numberofPassengers = numberofPassengers;
     }
 
     @Override
     public void vehicleCharacteristics() {
         super.vehicleCharacteristics();
 
-        System.out.println("Competitive Sport: "+competitiveSport+" Engine Capacity: "+engineCapacity+" Computer Game: "+computerGame);
+        System.out.println("Uses: "+usefullness+" Number of wheels: "+numberOfWheels+" Number of passengers: "+numberofPassengers);
     }
 }

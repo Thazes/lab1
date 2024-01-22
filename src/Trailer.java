@@ -1,43 +1,44 @@
 public class Trailer extends Vehicle{
 
-    String competitiveSport,engineCapacity,computerGame;
+    String usefullness,maximumLoadCapacity,numberOfAxles;
 
-    public Trailer(String type, String numberPassengers, String propulsionTechnology, String competitiveSport, String engineCapacity, String computerGame) {
-        super(type, numberPassengers, propulsionTechnology);
-        this.competitiveSport = competitiveSport;
-        this.engineCapacity = engineCapacity;
-        this.computerGame = computerGame;
+    public Trailer(String type, String usefullness, String maximumLoadCapacity, String numberOfAxles) {
+        super(type);
+        this.usefullness = usefullness;
+        this.maximumLoadCapacity = maximumLoadCapacity;
+        this.numberOfAxles = numberOfAxles;
     }
 
-    public String getCompetitiveSport() {
-        return competitiveSport;
+
+    public String getUsefullness() {
+        return usefullness;
     }
 
-    public void setCompetitiveSport(String competitiveSport) {
-        this.competitiveSport = competitiveSport;
+    public void setUsefullness(String usefullness) {
+        this.usefullness = usefullness;
     }
 
-    public String getEngineCapacity() {
-        return engineCapacity;
+    public String getMaximumLoadCapacity() {
+        return maximumLoadCapacity;
     }
 
-    public void setEngineCapacity(String engineCapacity) {
-        this.engineCapacity = engineCapacity;
+    public void setMaximumLoadCapacity(String maximumLoadCapacity) {
+        this.maximumLoadCapacity = maximumLoadCapacity;
     }
 
-    public String getComputerGame() {
-        return computerGame;
+    public String getNumberOfAxles() {
+        return numberOfAxles;
     }
 
-    public void setComputerGame(String computerGame) {
-        this.computerGame = computerGame;
+    public void setNumberOfAxles(String numberOfAxles) {
+        this.numberOfAxles = numberOfAxles;
     }
 
     @Override
     public void vehicleCharacteristics() {
         super.vehicleCharacteristics();
 
-        System.out.println("Competitive Sport: "+competitiveSport+" Engine Capacity: "+engineCapacity+" Computer Game: "+computerGame);
+        System.out.println("Uses: "+usefullness+" Maximum Load Capacity: "+maximumLoadCapacity+" Number of axles: "+numberOfAxles);
 
     }
 }

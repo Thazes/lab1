@@ -1,20 +1,20 @@
 public class MotorCycle extends Vehicle{
 
-    String competitiveSport,engineCapacity,computerGame;
+    String fuelCapacity,engineCapacity,computerGame;
 
-    public MotorCycle(String type, String numberPassengers, String propulsionTechnology, String competitiveSport, String engineCapacity, String computerGame) {
-        super(type, numberPassengers, propulsionTechnology);
-        this.competitiveSport = competitiveSport;
+    public MotorCycle(String type, String fuelCapacity, String engineCapacity, String computerGame) {
+        super(type);
+        this.fuelCapacity = fuelCapacity;
         this.engineCapacity = engineCapacity;
         this.computerGame = computerGame;
     }
 
-    public String getCompetitiveSport() {
-        return competitiveSport;
+    public String getFuelCapacity() {
+        return fuelCapacity;
     }
 
-    public void setCompetitiveSport(String competitiveSport) {
-        this.competitiveSport = competitiveSport;
+    public void setFuelCapacity(String fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
     }
 
     public String getEngineCapacity() {
@@ -37,7 +37,7 @@ public class MotorCycle extends Vehicle{
     public void vehicleCharacteristics() {
         super.vehicleCharacteristics();
 
-        System.out.println("Competitive Sport: "+competitiveSport+" Engine Capacity: "+engineCapacity+" Computer Game: "+computerGame);
+        System.out.println("Fuel Capacity: "+fuelCapacity+" Engine Capacity: "+engineCapacity+" Computer Game: "+computerGame);
 
     }
 }
