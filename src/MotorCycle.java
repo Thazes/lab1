@@ -1,12 +1,12 @@
 public class MotorCycle extends Vehicle{
 
-    String fuelCapacity,engineCapacity,computerGame,drivingProcess;
+    String fuelCapacity,engineCapacity,trafficNavigation,drivingProcess;
 
-    public MotorCycle(String type, String fuelCapacity, String engineCapacity, String computerGame, String drivingProcess) {
+    public MotorCycle(String type, String fuelCapacity, String engineCapacity, String trafficNavigation, String drivingProcess) {
         super(type);
         this.fuelCapacity = fuelCapacity;
         this.engineCapacity = engineCapacity;
-        this.computerGame = computerGame;
+        this.trafficNavigation = trafficNavigation;
         this.drivingProcess = drivingProcess;
     }
 
@@ -26,12 +26,12 @@ public class MotorCycle extends Vehicle{
         this.engineCapacity = engineCapacity;
     }
 
-    public String getComputerGame() {
-        return computerGame;
+    public String getTrafficNavigation() {
+        return trafficNavigation;
     }
 
-    public void setComputerGame(String computerGame) {
-        this.computerGame = computerGame;
+    public void setTrafficNavigation(String trafficNavigation) {
+        this.trafficNavigation = trafficNavigation;
     }
 
     public String getDrivingProcess() {
@@ -46,7 +46,7 @@ public class MotorCycle extends Vehicle{
     public void vehicleCharacteristics() {
         super.vehicleCharacteristics();
 
-        System.out.println("Fuel Capacity: "+fuelCapacity+" Engine Capacity: "+engineCapacity+" Computer Game: "+computerGame+" Driving process: "+drivingProcess);
+        System.out.println("Fuel Capacity: "+fuelCapacity+" Engine Capacity: "+engineCapacity+" Traffic Navigation: "+trafficNavigation+" Driving process: "+drivingProcess);
 
     }
 }
